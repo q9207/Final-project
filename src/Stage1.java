@@ -40,10 +40,16 @@ public class Stage1 implements Stage {
 		{
 			System.out.println("As you walk to the hunting grounds, you look around you at your surroundings.");
 			if(!Game.coinflip()) {
-				System.out.println("*CRACK*");
+				System.out.println("*CRACK* You see Archie fall into a pit. You try to grab onto him however, the floor is covered in leaves, and in a "
+						+ "rush you slip into the deep pit as well. At the bottom of the pit lay many thick sharp spikes. Your side is only grazed but "
+						+ "your left leg is impaled. You can no longer walk and just lay on the ground of the pit. Little bugs start to eat at your flesh"
+						+ " as you die.");
+				Game.getGame().die();
+				return;
 			}
 			
-			// TODO write option 2
+			System.out.println("You spot a pit fall trap a bit ahead and call Archie to come closer to advoid the trap. You see a spotted hare uphead and"
+					+ "prepare to catch it. You and Archie both get in position to corner teh hare and catch it.");
 		}
 	}
 
@@ -58,7 +64,7 @@ public class Stage1 implements Stage {
 		}
 		else if (option == 2)
 		{
-			
+			return new Stage21();
 		}
 		return this;
 	}
