@@ -38,7 +38,11 @@ public class Stage1 implements Stage {
 		}
 		else 
 		{
-			System.out.println("As you walk to the hunting grounds, you spot a rabbit");
+			System.out.println("As you walk to the hunting grounds, you look around you at your surroundings.");
+			if(!Game.coinflip()) {
+				System.out.println("*CRACK*");
+			}
+			
 			// TODO write option 2
 		}
 	}

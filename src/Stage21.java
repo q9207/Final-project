@@ -1,4 +1,12 @@
 
+/**
+ * @author Audrey Oh
+ * @author Allison Qu
+ * @author Brandon Kim
+ * TODO comment.
+ */
+	//Hunting grounds
+
 public class Stage21 implements Stage{
 	int option;
 
