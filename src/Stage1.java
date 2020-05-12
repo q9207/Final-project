@@ -1,7 +1,9 @@
 
 /**
  * Stage 1 class.
- *
+ * @author Audrey Oh
+ * @author Allison Qu
+ * @author Brandon Kim
  * @author miryokuu
  */
 public class Stage1 implements Stage {
@@ -24,7 +26,7 @@ public class Stage1 implements Stage {
 		{
 			System.out.println("You go to the river to collect water. As your collecting water you hear rustling near you as Archie starts to bark. "
 					+ "You get startled and fall into the river. You attempt to swim out.");
-			if(!Game.coinflip())
+			if(!Game.coinflip())//if you fail coinflip
 			{
 				System.out.println("As you attempt to swim out you see Archie jumps in the river after you, however, now you both struggle to get air."
 						+ " Sadly you both lose your lives.");// you failed to swim out print?
@@ -36,6 +38,7 @@ public class Stage1 implements Stage {
 		}
 		else 
 		{
+			System.out.println("As you walk to the hunting grounds, you spot a rabbit");
 			// TODO write option 2
 		}
 	}

@@ -1,11 +1,5 @@
 
-/**
- * @author Audrey Oh
- * @author Allison Qu
- * @author Brandon Kim
- * TODO comment.
- */
-public class Stage11 implements Stage {
+public class Stage21 implements Stage{
 	int option;
 
 	/**
