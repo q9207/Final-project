@@ -5,7 +5,7 @@
  * @author Brandon Kim
  * TODO comment.
  */
-	//Hunting grounds
+	//Hunting grounds (hare battle)
 
 public class Stage21 implements Stage{
 	int option;
@@ -15,7 +15,7 @@ public class Stage21 implements Stage{
 	 */
 	@Override
 	public void executeRoutine() {
-		System.out.println("blah");
+		System.out.println("ho");// first msg here
 		
 		option = Game.getGame().nextInt(1, 2);
 		
