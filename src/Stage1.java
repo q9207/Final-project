@@ -37,6 +37,7 @@ public class Stage1 implements Stage {
 		else 
 		{
 			// TODO write option 2
+			//test
 		}
 	}
 
