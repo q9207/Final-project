@@ -33,7 +33,7 @@ public class Stage1 implements Stage {
 				Game.getGame().die();	// you call this to kill the player
 				return;
 			}
-			System.out.println("You see Archie jump in after you. He helps push you towards the shore and you both safely swim to the land."
+			System.out.println("You see Archie jump in after you. He helps push you towards the shore and you both safely swim to the land. "
 					+ "You fill your water bottle with the fresh water and head to the forest to collect wood.");// successfully swam out. head to forest
 		}
 		else 
