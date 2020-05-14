@@ -68,7 +68,7 @@ public class Game {
 	{
 		System.out.println("Welcome to the world of Askitu, " + Game.getGame().getUserName()
 				+ ". This game will take you through a series of trials.\n"
-				+ "To progress the game you will choose 1 of 2 or 3 options given. "
+				+ "To progress the game you will choose 1 of 2 or 3 options given. "//change if we don't use 3 options
 				+ "You are not allowed \nto go back to the previous question unless you restart."
 				+ " There are multiples endings,\nand some endings, or scenario, are based on luck! Let's begin!\n");
 		currentstage = new Stage1();
