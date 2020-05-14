@@ -49,7 +49,7 @@ public class Stage1 implements Stage {
 			}
 			
 			System.out.println("You spot a pit fall trap a bit ahead and call Archie to come closer to advoid the trap. You see a spotted hare uphead and"
-					+ "prepare to catch it. You and Archie both get in position to corner teh hare and catch it.");
+					+ "prepare to catch it. You and Archie both get in position to corner the hare and catch it.");
 		}
 	}
 
