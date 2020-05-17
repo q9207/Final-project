@@ -18,9 +18,9 @@ public class Stage11 implements Stage {
 	 */
 	@Override
 	public void executeRoutine() {
-		System.out.println("You walk around collecting small sticks for kindeling. You find an hold tree that looks like you can chop it down with ease. "
-				+ "As you're collecting wood \nArchie starts barking behind you. You can't see anything when you are hit in the stomach and see a few leave fly"
-				+ "around you. Do you (1) Run away, (2) Attempt to fight, or (3) Flirt");
+		System.out.print("You walk around collecting small sticks for kindeling. You find an old tree that looks like you can chop it down with ease. "
+				+ "As you're collecting wood \nArchie starts barking behind you. You can't see anything when you are hit in the stomach and see a few leave fly "
+				+ "around you. Do you (1) Run away, (2) Attempt to fight, or (3) Flirt\n>");
 		
 		option = Game.getGame().nextInt(1, 2);
 		
@@ -34,14 +34,17 @@ public class Stage11 implements Stage {
 		}
 		else if(option == 2)
 		{
-			ArrayList<String> attack = new ArrayList<String>(Arrays.asList(new String[] {"punch", "kick", "ghost fly"}));
+			ArrayList<String> attack = new ArrayList<String>(Arrays.asList(new String[] {"punch", "kick", "ghost punch"}));
 			System.out.println("\n*You have entered combat. You have 20 hitpoints and will always be reset at 20 at the start of each battle. The battle is like "
-					+ "always based on luck!");
-			System.out.println("The invisible ghost shows herself and you can tell she seems weak but you know she will not let you wlak away so she charges at you.");
-			int health = 20;
+					+ "always based on luck!\n");
+			System.out.println("The invisible ghost shows herself and you can tell she seems weak, but you know she will not let you walk away so she charges at you.");
+			int health =10;
+			int ghealth=23;//ghost health
 			while(health>0) {
-				String temp=attack.get((int)(Math.random()*4));
-				System.out.print("The ghost throws a "+temp);
+				System.out.println("You attack using your knife and slash down at her front.\n");
+				ghealth-=2;
+				String temp=attack.get((int)(Math.random()*3));
+				System.out.print("The ghost throws a "+temp+".");
 				if(temp.contentEquals("punch")) {
 					health-=1;
 				}
@@ -50,6 +53,25 @@ public class Stage11 implements Stage {
 				}
 				else {
 					health-=3;
+				}
+				System.out.println("\nYou use your ax and hit for a stronger attack. Archie runs in a bites her causing a pain sream from the ghost.\n");
+				if ((int)(Math.random()*100%2)==0) {
+				ghealth-=3;
+				}
+				else {
+					ghealth-=2;
+				}
+				System.out.println("Your health: "+health+" "+ghealth+"\n");
+				if(health<=0) {
+					System.out.println("Sadly the ghost got the best of you. As you tkae your final breathe, she stares deeply into your eyes as both past present"
+							+ "and future \nall flash in yout mind at once as she explodes your lungs and you fall to the ground\n");
+					Game.getGame().die();
+					break;
+				}
+				else if(ghealth<=0) {
+					System.out.println("The ghost falls to the ground and slow starts to disappear leaving behind a small glowing orb. You place in your bag and"
+							+ " quickly finish gathering the supplies left you needed. Finally you head to the hunting grounds.");
+					break;
 				}
 			}
 		}

@@ -15,8 +15,7 @@ public class Stage1 implements Stage {
 	 */
 	@Override
 	public void executeRoutine() {
-		System.out.print(
-				"There is still sun out and you need supplies, you take your trusty axe and your hunting knife with you into the woods."
+		System.out.print("There is still sun out and you need supplies, you take your trusty axe and your hunting knife with you into the woods."
 				+ " Your dog, Archie, decides to follows you."
 						+ "\nWhere do you deside to go first? (1) River (2) Hunting grounds?\n>");//river question
 		
@@ -34,7 +33,7 @@ public class Stage1 implements Stage {
 				return;
 			}
 			System.out.println("You see Archie jump in after you. He helps push you towards the shore and you both safely swim to the land. "
-					+ "You fill your water bottle with the fresh water and head to the forest to collect wood.");// successfully swam out. head to forest
+					+ "You fill your water bottle with the fresh water and head to the forest to collect wood.\n");// successfully swam out. head to forest
 		}
 		else 
 		{

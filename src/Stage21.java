@@ -5,7 +5,7 @@
  * @author Brandon Kim
  * TODO comment.
  */
-	//Hunting grounds (hare battle)
+	//Hunting grounds (here battle)
 
 public class Stage21 implements Stage{
 	int option;
