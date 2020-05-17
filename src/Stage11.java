@@ -96,7 +96,7 @@ public class Stage11 implements Stage {
 		}
 		else if (option == 2)
 		{
-			
+			return new Stage111();
 		}
 		return this;
 	}
