@@ -34,8 +34,24 @@ public class Stage11 implements Stage {
 		}
 		else if(option == 2)
 		{
-			ArrayList<String> attack = new ArrayList<String>(Arrays.asList(new String[] {"punch", "kick", "ghost fly", }));
-			System.out.println("hi");
+			ArrayList<String> attack = new ArrayList<String>(Arrays.asList(new String[] {"punch", "kick", "ghost fly"}));
+			System.out.println("\n*You have entered combat. You have 20 hitpoints and will always be reset at 20 at the start of each battle. The battle is like "
+					+ "always based on luck!");
+			System.out.println("The invisible ghost shows herself and you can tell she seems weak but you know she will not let you wlak away so she charges at you.");
+			int health = 20;
+			while(health>0) {
+				String temp=attack.get((int)(Math.random()*4));
+				System.out.print("The ghost throws a "+temp);
+				if(temp.contentEquals("punch")) {
+					health-=1;
+				}
+				else if(temp.contentEquals("kick")) {
+					health-=2;
+				}
+				else {
+					health-=3;
+				}
+			}
 		}
 		else {
 			System.out.println("You see around for the floating leaves. You lean agaist the tree, ask it \"come here often?\" You can tell the ghost has stopped"
