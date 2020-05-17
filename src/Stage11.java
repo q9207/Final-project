@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author Audrey Oh
@@ -32,6 +34,7 @@ public class Stage11 implements Stage {
 		}
 		else if(option == 2)
 		{
+			ArrayList<String> attack = new ArrayList<String>(Arrays.asList(new String[] {"punch", "kick", "ghost fly", }));
 			System.out.println("hi");
 		}
 		else {
